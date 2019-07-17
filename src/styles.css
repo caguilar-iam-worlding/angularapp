@@ -1,11 +1,12 @@
 /* Variables */
 :root {
+  /* Project colors */
+  --primary-color: #0d9869;
   /* Background colors */
-  --primary-bg-color: #f9fbfd;
-  --secondary-bg-color: #fff;
+  --primary-bg-color: #fdfdfd;
   /* Text colors */
-  --primary-text-color: #12263f;
-  --secondary-text-color: #6e84a3;
+  --primary-text-color: #252525;
+  --secondary-text-color: #9d9d9d;
 }
 
 
@@ -13,4 +14,47 @@ body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: 'Nunito', sans-serif;
+}
+
+/* Color classes */
+.black-color {
+  color: #000;
+}
+.white-color {
+  color: #fff;
+}
+.primary-color {
+  color: var(--primary-color);
+}
+.icon-color {
+  opacity: 0.75;
+}
+
+
+
+
+/* Space between components */
+.icon-left-spacing {
+  margin-left: 1.25rem!important;
+}
+.icon-right-spacing {
+  margin-right: 1.25rem!important;
+}
+
+
+/* Align items */
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+
+
+/* Card */
+.card-no-border {
+  border: 0px;
+}
+.card-radius {
+  border-radius: 0.5rem;
 }

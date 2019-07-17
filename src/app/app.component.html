@@ -1,9 +1,18 @@
-<div class="container p-3">
-  <div class="row">
-      <div class="col">
-        hellasdfasdf
-      </div>
+<app-header></app-header>
+<div class="row">
+  <div class="col">
+    <div #home_header class="mb-3">
+        <h3 class="font-weight-bold">What's up {{ city }}?</h3>
+        <div>Look what is happening around you and find plans, things to do and enjoy!</div>
     </div>
+    <div #home_body class="mb-3">
+        <div class="card card-no-border card-radius shadow">
+            <div class="card-body">
+              This is some text within a card body.
+            </div>
+          </div>
+    </div>
+
+  </div>
 </div>
-
-
+<app-footer></app-footer>
