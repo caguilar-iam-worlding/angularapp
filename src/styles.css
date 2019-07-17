@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+/* Variables */
+:root {
+  /* Background colors */
+  --primary-bg-color: #f9fbfd;
+  --secondary-bg-color: #fff;
+  /* Text colors */
+  --primary-text-color: #12263f;
+  --secondary-text-color: #6e84a3;
+}
+
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: 'Nunito', sans-serif;
+}
