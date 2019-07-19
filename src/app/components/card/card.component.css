@@ -1,0 +1,7 @@
+/* Card */
+.card-no-border {
+  border: 0px;
+}
+.card-radius {
+  border-radius: 0.25rem;
+}
