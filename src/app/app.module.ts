@@ -6,6 +6,7 @@ import { HeaderComponent } from './elements/header/header.component';
 import { FooterComponent } from './elements/footer/footer.component';
 import { CardComponent } from './components/card/card.component';
 import { AlertComponent } from './elements/alert/alert.component';
+import { SearchComponent } from './elements/search/search.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { AlertComponent } from './elements/alert/alert.component';
     HeaderComponent,
     FooterComponent,
     CardComponent,
-    AlertComponent
+    AlertComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule
