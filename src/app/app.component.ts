@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 
+// Import models
+import { Action } from './models/action.model';
+import { Coordinate } from './models/coordinate.model';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -21,10 +25,13 @@ export class AppComponent {
     is_instagram_profile_upload: false,
   };
   // From Data service where reload the page
-  plans = [
-    { name: 'Parque del Retiro', address: 'Avda. independencia', latitude: 40.411214, longitude: -3.713434 },
-    { name: 'Parque del Almendro', address: 'Avda. grande', latitude: 40.40212, longitude: -3.73423948 }
+  plans: Action[] = [
+    new Action('Cinema', 'Summer films', 'Avda. independencia', 'Parque del Retiro', new Coordinate(40.411214, -3.713434))
   ];
+  // plans = [
+  //   { thematic: 'Cinema', name: 'Parque del Retiro', address: 'Avda. independencia', latitude: 40.411214, longitude: -3.713434 },
+  //   { thematic: 'Theatre', name: 'Parque del Almendro', address: 'Avda. grande', latitude: 40.40212, longitude: -3.73423948 }
+  // ];
 
   on_action() {
     console.log('Click on action button');
