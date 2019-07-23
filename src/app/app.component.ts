@@ -25,16 +25,16 @@ export class AppComponent {
     is_instagram_profile_upload: false,
   };
   // From Data service where reload the page
-  plans: Action[] = [
-    new Action('Cinema', 'Summer films', 'Avda. independencia', 'Parque del Retiro', new Coordinate(40.411214, -3.713434))
+  actions: Action[] = [
+    new Action('Cinema', 'Summer films', 'Avda. independencia', 'Parque del Retiro', new Coordinate(40.411214, -3.713434)),
+    new Action('Theatre', 'La vida es sueño', 'Avda. grande', 'Parque del Almendro', new Coordinate(40.40212, -3.73423948))
   ];
-  // plans = [
-  //   { thematic: 'Cinema', name: 'Parque del Retiro', address: 'Avda. independencia', latitude: 40.411214, longitude: -3.713434 },
-  //   { thematic: 'Theatre', name: 'Parque del Almendro', address: 'Avda. grande', latitude: 40.40212, longitude: -3.73423948 }
-  // ];
+
 
   on_action() {
     console.log('Click on action button');
+    console.log(this.actions[0]);
+
   }
 
   show_alert() {
