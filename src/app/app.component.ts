@@ -27,7 +27,8 @@ export class AppComponent {
   // From Data service where reload the page
   actions: Action[] = [
     new Action('Cinema', 'Summer films', 'Avda. independencia', 'Parque del Retiro', new Coordinate(40.411214, -3.713434)),
-    new Action('Theatre', 'La vida es sueño', 'Avda. grande', 'Parque del Almendro', new Coordinate(40.40212, -3.73423948))
+    new Action('Theatre', 'La vida es sueño', 'Avda. grande', 'Parque del Almendro', new Coordinate(40.40212, -3.73423948)),
+    new Action('Sport', 'Real Madrid - Barcelona', 'Concha Espina, 2', 'Santiago Bernabeu', new Coordinate(40.41, -3.71))
   ];
 
 
